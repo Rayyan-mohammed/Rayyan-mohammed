@@ -117,17 +117,26 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 <a href="https://github.com/Rayyan-mohammed/Skin-Cancer-Detection">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Skin-Cancer-Detection&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
 </a>
-<a href="https://github.com/Rayyan-mohammed/Traffic-Sign-Recognition-System">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Traffic-Sign-Recognition-System&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
+<a href="https://github.com/Rayyan-mohammed/Pharmacy-Management-System">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Pharmacy-Management-System&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
 </a>
 
 <br/><br/>
 
+<a href="https://github.com/Rayyan-mohammed/Quiz-Application">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Quiz-Application&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
+</a>
 <a href="https://github.com/Rayyan-mohammed/NMIMS-Anonymous-Complaint-Portal">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=NMIMS-Anonymous-Complaint-Portal&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
 </a>
-<a href="https://github.com/Rayyan-mohammed/Phishing-Attack-Detection-System">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Phishing-Attack-Detection-System&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
+
+<br/><br/>
+
+<a href="https://github.com/Rayyan-mohammed/Traffic-Sign-Recognition-System">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Traffic-Sign-Recognition-System&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
+</a>
+<a href="https://github.com/Rayyan-mohammed/DNA-Sequence-Compression">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=DNA-Sequence-Compression&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
 </a>
 
 </div>
