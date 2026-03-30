@@ -1,134 +1,241 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Md%20Rayyan&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=AI%20%2F%20ML%20Engineer%20%E2%80%A2%20Data%20Scientist%20%E2%80%A2%20Cloud%20Enthusiast&descAlignY=55&descSize=18" width="100%"/>
+
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=800&color=6E40C9&center=true&vCenter=true&width=700&lines=Hey%2C+I'm+Rayyan+%F0%9F%91%8B;AI+%2F+ML+Engineer+in+the+Making;Data+Science+%E2%80%A2+Cloud+%E2%80%A2+Full-Stack;Building+things+that+matter." alt="Typing SVG" />
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&random=false&width=620&lines=Building+ML+models+that+actually+work+%F0%9F%A7%A0;Google+Cloud+Student+Ambassador+%E2%98%81%EF%B8%8F;Head+%40+Code+IT+Club%2C+NMIMS+%F0%9F%92%BB;TechFest+2025+Hackathon+Winner+%F0%9F%8F%86;Targeting+Masters+in+Europe+%F0%9F%8C%8D;Open+to+ML+Internships+%F0%9F%9A%80" alt="Typing SVG" /></a>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Rayyan-mohammed&style=flat-square&color=6E40C9&label=Profile+Views" />
-&nbsp;
-<a href="https://www.linkedin.com/in/md-rayyan/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white"/></a>
-&nbsp;
-<a href="https://github.com/Rayyan-mohammed"><img src="https://img.shields.io/github/followers/Rayyan-mohammed?label=Follow&style=flat-square&color=6E40C9"/></a>
+[![LinkedIn](https://img.shields.io/badge/-md--rayyan-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-rayyan/)
+[![GitHub followers](https://img.shields.io/github/followers/Rayyan-mohammed?label=Follow&style=flat-square&color=A78BFA&labelColor=1a1a2e)](https://github.com/Rayyan-mohammed)
+[![Profile Views](https://komarev.com/ghpvc/?username=Rayyan-mohammed&style=flat-square&color=A78BFA&label=Profile+Views)](https://github.com/Rayyan-mohammed)
 
 </div>
 
 ---
 
-## 🧑‍💻 About Me
+<img align="right" width="340" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" alt="coding gif"/>
 
-```python
-rayyan = {
-    "name"       : "Md Rayyan",
-    "degree"     : "B.Tech CSE (Data Science) @ NMIMS University, Hyderabad",
-    "batch"      : "2023 – 2027  |  CGPA: 3.52 / 4.0",
-    "roles"      : ["Head – Code IT Club", "Google Cloud Student Ambassador"],
-    "interests"  : ["AI / ML", "Data Science", "Cloud Computing",
-                    "Cybersecurity", "Full-Stack Dev"],
-    "next"       : "Masters in CS → Germany / Netherlands (2027)",
-    "currently"  : "Building ML pipelines, exploring LLMs & cloud-native apps",
-    "fun_fact"   : "I won my university's TechFest 2025 Hackathon 🏆",
-}
+### 👨‍💻 &nbsp;Who Am I?
+
+```yaml
+name: Md Rayyan
+location: Hyderabad, Telangana 🇮🇳
+education:
+  degree: B.Tech CSE (Data Science)
+  university: NMIMS University, Hyderabad
+  batch: 2023 → 2027
+  cgpa: 3.52 / 4.0
+
+roles:
+  - Head @ Code IT Club, NMIMS
+  - Google Cloud Student Ambassador
+  - ACM Chapter Co-founder
+
+currently:
+  building: Skin Cancer Detection + LiveRoute Simulator
+  learning: PyTorch · Docker · MLOps · German 🇩🇪
+  reading: Papers on AI in Wireless Communications
+
+goal: Masters in CS → Germany / Netherlands (2027)
+fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 ```
+
+<br clear="right"/>
 
 ---
 
-## 🛠️ Tech Stack
+### 🔥 &nbsp;What I'm Up To
 
-**Languages**
+- 🧬 &nbsp;Training deep learning models for **medical image classification** (HAM10000 dataset)
+- 🌐 &nbsp;Exploring **cloud-native ML deployment** with FastAPI + Docker + GCP
+- 📝 &nbsp;Writing a research paper on **AI applications in wireless communication**
+- ☁️ &nbsp;Expanding Google Cloud expertise as a **multi-campus Student Ambassador**
+- 🇩🇪 &nbsp;Learning German for my **European Masters journey**
+- ✍️ &nbsp;Blogging at ***Leaving Today: Chasing Tomorrow***
+
+---
+
+### 🛠️ &nbsp;Tech Stack
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**🤖 AI / ML / Data Science**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-**AI / ML & Data**
-
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 
-**Web & Backend**
+</td>
+<td valign="top" width="50%">
+
+**🌐 Web & Backend**
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
 
-**Cloud & DevOps**
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
 
-![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+**☁️ Cloud & DevOps**
+
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+</td>
+<td valign="top" width="50%">
+
+**🔐 Other Skills**
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Cybersecurity](https://img.shields.io/badge/Cybersecurity-00B4D8?style=for-the-badge&logo=hackthebox&logoColor=white)
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🚀 Featured Projects
-
-| Project | Description | Stack | 
-|--------|-------------|-------|
-| 🔬 **[Skin Cancer Detection](https://github.com/Rayyan-mohammed/Skin-Cancer-Detection)** | Multi-class dermoscopic image classifier using EfficientNetB0, MobileNetV2 & ResNet50 with Grad-CAM explainability — deployed via FastAPI + React | TensorFlow · FastAPI · React · HAM10000 |
-| 🚦 **[Traffic Sign Recognition](https://github.com/Rayyan-mohammed/Traffic-Sign-Recognition-System)** | CNN-based traffic sign classifier achieving **92% accuracy** with real-time inference via Streamlit | Python · OpenCV · CNN · Streamlit |
-| 📢 **[NMIMS Anonymous Complaint Portal](https://github.com/Rayyan-mohammed/NMIMS-Anonymous-Complaint-Portal)** | University-wide complaint system with anonymous submissions, admin dashboard & issue routing | PHP · MySQL · HTML/CSS |
-| 💊 **[PharmaFlow Pro](https://github.com/Rayyan-mohammed/Pharmacy-Management-System)** | Full-stack pharmacy ERP covering inventory, billing, and supplier management | PHP · MySQL |
-| 🦠 **[LiveRoute – Epidemic Simulator](https://github.com/Rayyan-mohammed/LiveRoute)** | Real-time epidemic spread simulator using graph algorithms (BFS/DFS) for Advanced Data Structures | Python · NetworkX · Matplotlib |
-| 🛡️ **[Phishing Attack Detection](https://github.com/Rayyan-mohammed/Phishing-Attack-Detection-System)** | ML pipeline to detect phishing URLs with feature extraction and ensemble classification | Python · Scikit-learn |
-
----
-
-## 📊 GitHub Stats
+### 🚀 &nbsp;Featured Projects
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Rayyan-mohammed&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" />
-&nbsp;&nbsp;
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rayyan-mohammed&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+<a href="https://github.com/Rayyan-mohammed/Skin-Cancer-Detection">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Skin-Cancer-Detection&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
+</a>
+<a href="https://github.com/Rayyan-mohammed/Traffic-Sign-Recognition-System">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Traffic-Sign-Recognition-System&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
+</a>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=Rayyan-mohammed&theme=tokyonight&hide_border=true" />
+<a href="https://github.com/Rayyan-mohammed/NMIMS-Anonymous-Complaint-Portal">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=NMIMS-Anonymous-Complaint-Portal&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
+</a>
+<a href="https://github.com/Rayyan-mohammed/Phishing-Attack-Detection-System">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Phishing-Attack-Detection-System&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
+</a>
 
 </div>
 
----
+<br/>
 
-## 🏆 Achievements & Leadership
-
-- 🥇 **TechFest 2025 Hackathon Winner** — NMIMS University (6-person team)
-- ☁️ **Google Cloud Student Ambassador** — Multi-campus (NMIMS)
-- 💻 **Head, Code IT Club** — NMIMS Hyderabad
-- 🌐 **ACM Student Chapter** — Co-founding member & Web Portal Manager (ELGE Club applicant)
-- 📝 **Research** — *Applications of AI in Wireless Communication* (in progress)
+> 💡 *Explore all repos [here](https://github.com/Rayyan-mohammed?tab=repositories) — including pharmacy ERP, quiz apps, and graph algorithm simulators.*
 
 ---
 
-## 📈 Activity
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rayyan-mohammed&theme=tokyo-night&hide_border=true&area=true" />
-</div>
-
----
-
-## 📬 Let's Connect
+### 📊 &nbsp;GitHub Stats
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's_connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-rayyan/)
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=Rayyan-mohammed&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA&count_private=true&include_all_commits=true" />
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-Explore_my_work-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rayyan-mohammed)
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rayyan-mohammed&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA&langs_count=8" />
 
-<br/>
+<br/><br/>
 
-*Open to ML internships, research collaborations, and interesting open-source projects.*
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=6E40C9&height=80&section=footer" />
+<img src="https://streak-stats.demolab.com?user=Rayyan-mohammed&theme=tokyonight&hide_border=true&background=0d1117&stroke=A78BFA&ring=A78BFA&fire=FF6B6B&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=A78BFA&sideLabels=A78BFA&dates=888888" />
 
 </div>
+
+---
+
+### 🏆 &nbsp;GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=Rayyan-mohammed&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" width="100%" />
+
+</div>
+
+---
+
+### 🐍 &nbsp;Watch My Contributions Get Eaten
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake.svg" />
+    <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake-dark.svg" />
+  </picture>
+</div>
+
+> ⚙️ *Snake auto-updates daily via GitHub Actions — see `.github/workflows/snake.yml`*
+
+---
+
+### 📈 &nbsp;Contribution Activity
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rayyan-mohammed&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=A78BFA&line=A78BFA&point=ffffff&area=true&area_color=A78BFA" width="100%" />
+</div>
+
+---
+
+### 🎯 &nbsp;Roadmap: 2025 → 2027
+
+```
+Q2 2025  ████████████░░░░  PyTorch deep-dive + first Kaggle competition entry
+Q3 2025  ████████░░░░░░░░  MLOps · Docker · GCP deployment of ML models
+Q4 2025  ████░░░░░░░░░░░░  Research paper on AI in Wireless Comm → submission
+Q1 2026  ██░░░░░░░░░░░░░░  ML Internship hunt · IELTS prep begins
+Q2 2026  █░░░░░░░░░░░░░░░  Masters applications → Germany / Netherlands
+2027     🎓░░░░░░░░░░░░░░  MSc. Computer Science — Europe 🌍
+```
+
+---
+
+### 🌟 &nbsp;Achievements & Leadership
+
+| Badge | Achievement |
+|-------|-------------|
+| 🏆 | **TechFest 2025 Hackathon Winner** — NMIMS University (6-member team) |
+| ☁️ | **Google Cloud Student Ambassador** — Multi-campus representation |
+| 💻 | **Head, Code IT Club** — NMIMS Hyderabad |
+| 🌐 | **ACM Student Chapter** — Co-founding member |
+| 📝 | **Research in Progress** — AI Applications in Wireless Communication |
+| ✍️ | **Blogger** — *Leaving Today: Chasing Tomorrow* |
+
+---
+
+### 💬 &nbsp;Let's Build Something Together
+
+<div align="center">
+
+*I'm actively looking for **ML internship opportunities** and **research collaborations**.*
+*If you're building something interesting in AI/ML — let's connect.*
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-rayyan/)
+&nbsp;&nbsp;
+[![GitHub](https://img.shields.io/badge/GitHub-Explore%20My%20Work-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rayyan-mohammed)
+
+<br/>
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
