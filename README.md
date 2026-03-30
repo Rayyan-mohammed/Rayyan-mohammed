@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&random=false&width=620&lines=Building+ML+models+that+actually+work+%F0%9F%A7%A0;Google+Cloud+Student+Ambassador+%E2%98%81%EF%B8%8F;Head+%40+Code+IT+Club%2C+NMIMS+%F0%9F%92%BB;TechFest+2025+Hackathon+Winner+%F0%9F%8F%86;Targeting+Masters+in+Europe+%F0%9F%8C%8D;Open+to+ML+Internships+%F0%9F%9A%80" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&random=false&width=620&lines=Building+ML+models+that+actually+work+%F0%9F%A7%A0;Google+Cloud+Student+Ambassador+%E2%98%81%EF%B8%8F;Head+%40+Code+IT+Club%2C+NMIMS+%F0%9F%92%BB;TechFest+2025+Hackathon+Winner+%F0%9F%8F%86;Open+to+ML+Internships+%F0%9F%9A%80" alt="Typing SVG" /></a>
 
 <br/>
 
@@ -30,14 +30,11 @@ education:
 roles:
   - Head @ Code IT Club, NMIMS
   - Google Cloud Student Ambassador
-  - ACM Chapter Co-founder
 
 currently:
   building: Skin Cancer Detection + LiveRoute Simulator
-  learning: PyTorch · Docker · MLOps · German 🇩🇪
-  reading: Papers on AI in Wireless Communications
+  learning: PyTorch · Docker · MLOps
 
-goal: Masters in CS → Germany / Netherlands (2027)
 fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 ```
 
@@ -49,9 +46,7 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 
 - 🧬 &nbsp;Training deep learning models for **medical image classification** (HAM10000 dataset)
 - 🌐 &nbsp;Exploring **cloud-native ML deployment** with FastAPI + Docker + GCP
-- 📝 &nbsp;Writing a research paper on **AI applications in wireless communication**
 - ☁️ &nbsp;Expanding Google Cloud expertise as a **multi-campus Student Ambassador**
-- 🇩🇪 &nbsp;Learning German for my **European Masters journey**
 - ✍️ &nbsp;Blogging at ***Leaving Today: Chasing Tomorrow***
 
 ---
@@ -71,7 +66,6 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 
 </td>
 <td valign="top" width="50%">
@@ -85,7 +79,6 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
 
 </td>
 </tr>
@@ -103,7 +96,7 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 </td>
 <td valign="top" width="50%">
 
-**🔐 Other Skills**
+**💡 Other**
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
@@ -141,7 +134,7 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 
 <br/>
 
-> 💡 *Explore all repos [here](https://github.com/Rayyan-mohammed?tab=repositories) — including pharmacy ERP, quiz apps, and graph algorithm simulators.*
+> 💡 *Explore all repos [here](https://github.com/Rayyan-mohammed?tab=repositories)*
 
 ---
 
@@ -164,24 +157,8 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 ### 🏆 &nbsp;GitHub Trophies
 
 <div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=Rayyan-mohammed&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" width="100%" />
-
+  <img src="https://github-profile-trophy.vercel.app/?username=Rayyan-mohammed&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" width="100%" />
 </div>
-
----
-
-### 🐍 &nbsp;Watch My Contributions Get Eaten
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake.svg" />
-    <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake-dark.svg" />
-  </picture>
-</div>
-
-> ⚙️ *Snake auto-updates daily via GitHub Actions — see `.github/workflows/snake.yml`*
 
 ---
 
@@ -190,32 +167,6 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rayyan-mohammed&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=A78BFA&line=A78BFA&point=ffffff&area=true&area_color=A78BFA" width="100%" />
 </div>
-
----
-
-### 🎯 &nbsp;Roadmap: 2025 → 2027
-
-```
-Q2 2025  ████████████░░░░  PyTorch deep-dive + first Kaggle competition entry
-Q3 2025  ████████░░░░░░░░  MLOps · Docker · GCP deployment of ML models
-Q4 2025  ████░░░░░░░░░░░░  Research paper on AI in Wireless Comm → submission
-Q1 2026  ██░░░░░░░░░░░░░░  ML Internship hunt · IELTS prep begins
-Q2 2026  █░░░░░░░░░░░░░░░  Masters applications → Germany / Netherlands
-2027     🎓░░░░░░░░░░░░░░  MSc. Computer Science — Europe 🌍
-```
-
----
-
-### 🌟 &nbsp;Achievements & Leadership
-
-| Badge | Achievement |
-|-------|-------------|
-| 🏆 | **TechFest 2025 Hackathon Winner** — NMIMS University (6-member team) |
-| ☁️ | **Google Cloud Student Ambassador** — Multi-campus representation |
-| 💻 | **Head, Code IT Club** — NMIMS Hyderabad |
-| 🌐 | **ACM Student Chapter** — Co-founding member |
-| 📝 | **Research in Progress** — AI Applications in Wireless Communication |
-| ✍️ | **Blogger** — *Leaving Today: Chasing Tomorrow* |
 
 ---
 
