@@ -112,34 +112,14 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 
 ### 🚀 &nbsp;Featured Projects
 
-<div align="center">
-
-<a href="https://github.com/Rayyan-mohammed/Skin-Cancer-Detection">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Skin-Cancer-Detection&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
-</a>
-<a href="https://github.com/Rayyan-mohammed/Pharmacy-Management-System">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Pharmacy-Management-System&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/Rayyan-mohammed/Quiz-Application">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Quiz-Application&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
-</a>
-<a href="https://github.com/Rayyan-mohammed/NMIMS-Anonymous-Complaint-Portal">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=NMIMS-Anonymous-Complaint-Portal&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
-</a>
-
-<br/><br/>
-
-<a href="https://github.com/Rayyan-mohammed/Traffic-Sign-Recognition-System">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=Traffic-Sign-Recognition-System&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
-</a>
-<a href="https://github.com/Rayyan-mohammed/DNA-Sequence-Compression">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=Rayyan-mohammed&repo=DNA-Sequence-Compression&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA" />
-</a>
-
-</div>
+| 🔬 Project | 📄 Description | 🛠️ Stack |
+|---|---|---|
+| [**Skin Cancer Detection**](https://github.com/Rayyan-mohammed/Skin-Cancer-Detection) | Multi-class dermoscopic classifier using EfficientNetB0, MobileNetV2 & ResNet50 with Grad-CAM explainability | TensorFlow · FastAPI · React |
+| [**PharmaFlow Pro**](https://github.com/Rayyan-mohammed/Pharmacy-Management-System) | Full-stack pharmacy ERP covering inventory, billing & supplier management | PHP · MySQL |
+| [**Quiz Application**](https://github.com/Rayyan-mohammed/Quiz-Application) | Dynamic quiz platform with auth, scoring, and real-time leaderboard | Next.js · Prisma · MySQL |
+| [**NMIMS Complaint Portal**](https://github.com/Rayyan-mohammed/NMIMS-Anonymous-Complaint-Portal) | University-wide anonymous complaint system with admin dashboard & issue routing | PHP · MySQL |
+| [**Traffic Sign Detection**](https://github.com/Rayyan-mohammed/Traffic-Sign-Recognition-System) | CNN-based traffic sign classifier with **92% accuracy** and real-time inference | Python · OpenCV · Streamlit |
+| [**DNA Sequence Compression**](https://github.com/Rayyan-mohammed/DNA-Sequence-Compression) | Lossless compression of DNA sequences using Huffman encoding & run-length encoding | Python |
 
 <br/>
 
@@ -151,22 +131,18 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=Rayyan-mohammed&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA&count_private=true&include_all_commits=true" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Rayyan-mohammed&theme=tokyonight" width="100%"/>
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Rayyan-mohammed&theme=tokyonight" height="160"/>
 &nbsp;
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rayyan-mohammed&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=A78BFA&icon_color=A78BFA&langs_count=8" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Rayyan-mohammed&theme=tokyonight" height="160"/>
 
 <br/><br/>
 
 <img src="https://streak-stats.demolab.com?user=Rayyan-mohammed&theme=tokyonight&hide_border=true&background=0d1117&stroke=A78BFA&ring=A78BFA&fire=FF6B6B&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=A78BFA&sideLabels=A78BFA&dates=888888" />
 
-</div>
-
----
-
-### 🏆 &nbsp;GitHub Trophies
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Rayyan-mohammed&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" width="100%" />
 </div>
 
 ---
