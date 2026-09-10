@@ -6,7 +6,7 @@
 
 Building ML systems that hold up past the notebook: a retrieval pipeline that checks its own claims, training infrastructure that survives cloud interruptions, and a diagnostic ML pipeline built specifically to avoid the data-leakage mistakes that inflate most student results.
 
-[LinkedIn](https://www.linkedin.com/in/md-rayyan/) · [GitHub](https://github.com/Rayyan-mohammed) · Hyderabad, India
+[LinkedIn](https://www.linkedin.com/in/md-rayyan/) · [GitHub](https://github.com/Rayyan-mohammed) · [Email](mailto:rayyan1652@gmail.com) · Hyderabad, India
 
 </div>
 
@@ -143,7 +143,7 @@ Retail pricing decisions are often static or purely rule-based, ignoring price e
 
 <div align="center">
 
-[LinkedIn](https://www.linkedin.com/in/md-rayyan/) · [GitHub](https://github.com/Rayyan-mohammed)
+[LinkedIn](https://www.linkedin.com/in/md-rayyan/) · [GitHub](https://github.com/Rayyan-mohammed) · [Email](mailto:rayyan1652@gmail.com)
 
 <br/>
 
