@@ -1,189 +1,156 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Md%20Rayyan&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32&desc=AI%20%2F%20ML%20Engineer%20%E2%80%A2%20Data%20Scientist%20%E2%80%A2%20Cloud%20Enthusiast&descAlignY=55&descSize=18" width="100%"/>
-
 <div align="center">
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&random=false&width=620&lines=Building+ML+models+that+actually+work+%F0%9F%A7%A0;Google+Cloud+Student+Ambassador+%E2%98%81%EF%B8%8F;Head+%40+Code+IT+Club%2C+NMIMS+%F0%9F%92%BB;TechFest+2025+Hackathon+Winner+%F0%9F%8F%86;Open+to+ML+Internships+%F0%9F%9A%80" alt="Typing SVG" /></a>
+# Md Rayyan
 
-<br/>
+**Machine Learning Engineer in training** — Applied ML Systems · Deep Learning · MLOps
 
-[![LinkedIn](https://img.shields.io/badge/-md--rayyan-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-rayyan/)
-[![GitHub followers](https://img.shields.io/github/followers/Rayyan-mohammed?label=Follow&style=flat-square&color=A78BFA&labelColor=1a1a2e)](https://github.com/Rayyan-mohammed)
-[![Profile Views](https://komarev.com/ghpvc/?username=Rayyan-mohammed&style=flat-square&color=A78BFA&label=Profile+Views)](https://github.com/Rayyan-mohammed)
+Building ML systems that hold up past the notebook: a retrieval pipeline that checks its own claims, training infrastructure that survives cloud interruptions, and a diagnostic ML pipeline built specifically to avoid the data-leakage mistakes that inflate most student results.
+
+[LinkedIn](https://www.linkedin.com/in/md-rayyan/) · [GitHub](https://github.com/Rayyan-mohammed) · Hyderabad, India
 
 </div>
 
----
+<br/>
 
-<img align="right" width="340" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" alt="coding gif"/>
+## About
 
-### 👨‍💻 &nbsp;Who Am I?
+Final-year B.Tech CSE (Data Science) student at NMIMS University, Hyderabad (2023–2027). I spend more time in `model.py` and `docker-compose.yml` than in lecture slides.
 
-```yaml
-name: Md Rayyan
-location: Hyderabad, Telangana 🇮🇳
-education:
-  degree: B.Tech CSE (Data Science)
-  university: NMIMS University, Hyderabad
-  batch: 2023 → 2027
-  cgpa: 3.52 / 4.0
+My focus is applied ML engineering — not just training a model that scores well offline, but building the retrieval, evaluation, and serving layer around it that makes it trustworthy somewhere other than a notebook. Recent work spans retrieval-augmented generation with claim-level faithfulness checking, ML training infrastructure that survives AWS Spot interruptions, and a diagnostic pipeline built around getting cross-validation right.
 
-roles:
-  - Head @ Code IT Club, NMIMS
-  - Google Cloud Student Ambassador
-
-currently:
-  building: Skin Cancer Detection + LiveRoute Simulator
-  learning: PyTorch · Docker · MLOps
-
-fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
-```
-
-<br clear="right"/>
+I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassador**, and was part of the winning team at **TechFest 2025**.
 
 ---
 
-### 🔥 &nbsp;What I'm Up To
+## Stack
 
-- 🧬 &nbsp;Training deep learning models for **medical image classification** (HAM10000 dataset)
-- 🌐 &nbsp;Exploring **cloud-native ML deployment** with FastAPI + Docker + GCP
-- ☁️ &nbsp;Expanding Google Cloud expertise as a **multi-campus Student Ambassador**
-- ✍️ &nbsp;Blogging at ***Leaving Today: Chasing Tomorrow***
-
----
-
-### 🛠️ &nbsp;Tech Stack
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-**🤖 AI / ML / Data Science**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-
-</td>
-<td valign="top" width="50%">
-
-**🌐 Web & Backend**
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
-
-**☁️ Cloud & DevOps**
-
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</td>
-<td valign="top" width="50%">
-
-**💡 Other**
-
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-00B4D8?style=for-the-badge&logo=hackthebox&logoColor=white)
-
-</td>
-</tr>
-</table>
+| | |
+|---|---|
+| **AI / ML** | PyTorch · TensorFlow/Keras · scikit-learn · XGBoost · SHAP · HuggingFace Transformers |
+| **LLM / RAG** | LangGraph · FAISS · ChromaDB · Claude API · claim verification pipelines |
+| **Backend & Serving** | FastAPI · Flask · Streamlit · Next.js |
+| **Cloud & Infrastructure** | AWS (EKS, EC2, Lambda, S3, IAM) · Kubernetes · Terraform · Docker · Google Cloud |
+| **MLOps & Tooling** | GitHub Actions · Prometheus/Grafana · Git |
 
 ---
 
-### 🚀 &nbsp;Featured Projects
+## Featured Projects
 
-| 🔬 Project | 📄 Description | 🛠️ Stack |
+### 1. CodeSwitch-Verify — Faithfulness-Checked RAG
+**[Repository](https://github.com/Rayyan-mohammed/HinglishRAG-Faith)**
+
+RAG chatbots that answer Hinglish (Hindi-English) questions about Indian government welfare schemes generate fluent answers — but nothing checks whether each individual claim in that answer is actually supported by the source document. In a domain where a wrong eligibility condition or deadline has real consequences, that gap matters.
+
+**What it does:** every generated answer is decomposed into atomic claims; each claim is independently re-retrieved against the source corpus and judged — supported / contradicted / unverifiable — by an LLM-as-judge using majority vote over 3 samples, instead of being trusted outright.
+
+**Engineering:** `bge-m3` embeddings + FAISS retrieval · Claude Haiku 4.5 for generation, decomposition, and verification · scheme data pulled live from official `.gov.in` sources · design decisions tracked in ADRs.
+
+`Python` `FAISS` `Claude API` `RAG`
+
+---
+
+### 2. BharatHealth Analyst — LLM Agent over National Health Survey Data
+**[Repository](https://github.com/Rayyan-mohammed/aarogya-lens)**
+
+India's NFHS-5 district health survey (706 districts × 448 indicators) is the kind of dataset that normally needs SQL and an analyst to query. Questions like *"which districts have the worst child anaemia"* shouldn't require that.
+
+**What it does:** a LangGraph ReAct agent with 7 tools (semantic search, pandas/SQL query, charting, trend and correlation analysis) sits over a pipeline that merges NFHS-5 with historical NFHS-4 trend data for 62 indicators, indexed in ChromaDB.
+
+**Engineering:** FastAPI backend (11 endpoints, rate limiting, request logging) · Next.js frontend · CI test suite at 93% API coverage.
+
+**Where it honestly stands:** all 7 tools are verified end-to-end against a live LLM and the full stack runs. The one thing not yet proven is a complete accuracy benchmark — blocked twice by free-tier rate limits. Stating that plainly beats rounding it up.
+
+`Python` `LangGraph` `FastAPI` `Next.js` `ChromaDB`
+
+---
+
+### 3. Parkinson's Detection via Acoustic Biomarkers
+**[Repository](https://github.com/Rayyan-mohammed/Parkinson)**
+
+Most student ML projects on medical audio data report inflated accuracy because of subject-level data leakage — recordings from the same patient end up on both sides of the train/test split.
+
+**What it does:** strict subject-level `GroupKFold` cross-validation so no patient crosses the split, hyperparameter search bounded inside inner folds, and SMOTE balancing applied only within training folds.
+
+**Engineering:** `wav2vec2` transformer embeddings (768-dim) alongside hand-crafted acoustic features · SHAP for global (beeswarm) and per-patient (waterfall) explainability · built for cross-corpus evaluation against a second, independent dataset.
+
+**Result** (subject-isolated CV, reported with confidence intervals rather than one rounded number):
+
+| Model | Accuracy | ROC-AUC |
 |---|---|---|
-| [**Skin Cancer Detection**](https://github.com/Rayyan-mohammed/Skin-Cancer-Detection) | Multi-class dermoscopic classifier using EfficientNetB0, MobileNetV2 & ResNet50 with Grad-CAM explainability | TensorFlow · FastAPI · React |
-| [**PharmaFlow Pro**](https://github.com/Rayyan-mohammed/Pharmacy-Management-System) | Full-stack pharmacy ERP covering inventory, billing & supplier management | PHP · MySQL |
-| [**Quiz Application**](https://github.com/Rayyan-mohammed/Quiz-Application) | Dynamic quiz platform with auth, scoring, and real-time leaderboard | Next.js · Prisma · MySQL |
-| [**NMIMS Complaint Portal**](https://github.com/Rayyan-mohammed/NMIMS-Anonymous-Complaint-Portal) | University-wide anonymous complaint system with admin dashboard & issue routing | PHP · MySQL |
-| [**Traffic Sign Detection**](https://github.com/Rayyan-mohammed/Traffic-Sign-Recognition-System) | CNN-based traffic sign classifier with **92% accuracy** and real-time inference | Python · OpenCV · Streamlit |
-| [**DNA Sequence Compression**](https://github.com/Rayyan-mohammed/DNA-Sequence-Compression) | Lossless compression of DNA sequences using Huffman encoding & run-length encoding | Python |
+| MLP | 0.756 ± 0.057 | 0.851 ± 0.116 |
+| XGBoost | 0.760 ± 0.114 | 0.793 ± 0.204 |
 
-<br/>
-
-> 💡 *Explore all repos [here](https://github.com/Rayyan-mohammed?tab=repositories)*
+`Python` `scikit-learn` `XGBoost` `SHAP` `HuggingFace`
 
 ---
 
-### 📊 &nbsp;GitHub Stats
+### 4. Argus — Spot-Resilient ML Training Orchestrator *(team project)*
+**[Repository](https://github.com/Rayyan-mohammed/Argus-Spot_Resilient_ML_Training_Orchestrator)**
 
-<div align="center">
+AWS Spot instances are 70–90% cheaper than on-demand but can be reclaimed on 2 minutes' notice — a long training job that ignores this loses everything since its last checkpoint.
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Rayyan-mohammed&theme=tokyonight" width="100%"/>
+**What it does:** a Transformer predicts interruption risk from Spot price history; a Kubernetes operator (`kopf`) acts on that prediction to checkpoint and reschedule the training pod before the interruption lands; the job resumes automatically.
 
-<br/>
+**Result:** validated on a real AWS EKS cluster — a live Spot drain was survived with a ~75-second recovery. A controlled 80-trial benchmark showed the predictive approach hit **zero wasted compute** vs. 202s with no protection, and recovered **~12× faster** than a purely reactive approach. Every claimed result ships with a documented "honest limitations" note rather than being oversold. Targeting a NeurIPS ML4Sys 2026 workshop poster.
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Rayyan-mohammed&theme=tokyonight" height="160"/>
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Rayyan-mohammed&theme=tokyonight" height="160"/>
+**My part:** built with a teammate — I worked the orchestration/deployment side: Helm chart deployment, concurrent load/stress testing and cost analysis, and fixes to the risk-threshold logic.
 
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=Rayyan-mohammed&theme=tokyonight&hide_border=true&background=0d1117&stroke=A78BFA&ring=A78BFA&fire=FF6B6B&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=A78BFA&sideLabels=A78BFA&dates=888888" />
-
-</div>
+`Kubernetes` `PyTorch` `FastAPI` `Terraform` `AWS EKS` `Prometheus/Grafana`
 
 ---
 
-### 📈 &nbsp;Contribution Activity
+### 5. OptiPrice — Dynamic Pricing Engine
+**[Repository](https://github.com/Rayyan-mohammed/OptiPrice)** · **[Live](https://optiprice-dynamic-pricing-agent.streamlit.app/)**
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rayyan-mohammed&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=A78BFA&line=A78BFA&point=ffffff&area=true&area_color=A78BFA" width="100%" />
-</div>
+Retail pricing decisions are often static or purely rule-based, ignoring price elasticity, competitor movement, and margin trade-offs.
 
----
+**What it does:** a constrained optimization engine (SciPy) that maximizes profit or revenue depending on objective, a Monte Carlo simulator modeling a 30-day forward A/B test under realistic demand volatility, and SHAP-based explainability so a pricing recommendation isn't a black box.
 
-### 🐍 &nbsp;Contribution Snake
+**Engineering:** live competitor pricing via the Mercado Libre API · batch CSV pipeline for pricing thousands of SKUs at once · deployed and publicly reachable.
 
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake.svg" />
-    <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake.svg" width="100%" />
-  </picture>
-</div>
+`Python` `scikit-learn` `SciPy` `SHAP` `Streamlit`
 
 ---
 
-### 💬 &nbsp;Let's Build Something Together
+## Additional Work
+
+| Project | What it is | Stack |
+|---|---|---|
+| [ApplyForge](https://github.com/Rayyan-mohammed/ApplyForge) | Human-in-the-loop AI agent that discovers internships, ranks them against a resume, and drafts applications for review over Telegram. Deployed on EC2, running continuously. | Python · LLM agents |
+| [DNA Sequence Compression](https://github.com/Rayyan-mohammed/DNA-sequence-compression) ([live](https://dna-sequence-compression.streamlit.app/)) | Genomic data compression via LZ77, Burrows-Wheeler Transform, and suffix trees, with live NCBI data pulls and 3D protein structure rendering. | Python · Streamlit |
+| [Route Resilience](https://github.com/Rayyan-mohammed/Urban-Route-Resilience) *(team, ISRO hackathon)* | Occlusion-robust road extraction from satellite imagery (SegFormer) plus graph-theoretic network resilience analysis. | Python · PyTorch · NetworkX |
+| [Traffic Sign Recognition](https://github.com/Rayyan-mohammed/Traffic-Sign-Recognition-System) | Real-time 43-class CNN traffic sign classifier with webcam inference. | TensorFlow/Keras · OpenCV · Streamlit |
+| [Phishing URL Detector](https://github.com/Rayyan-mohammed/Phishing-Attack-Detection-System) | Random Forest classifier over 15+ URL features, served via Flask. | scikit-learn · Flask |
+
+---
+
+## How I approach ML problems
+
+- **Leakage is the default failure mode.** The Parkinson's project exists specifically to get subject-level cross-validation right, because most student medical-ML projects don't.
+- **An unverified result isn't a result.** Argus documents its limitations next to its wins. aarogya-lens says plainly which benchmark isn't finished instead of skipping it.
+- **Explainability isn't optional.** SHAP shows up wherever a model makes a decision that needs to be justified — diagnosis, pricing.
+- **Decisions get written down.** ADRs in CodeSwitch-Verify and Argus record *why* a design changed, not just what it is now.
+
+---
+
+## Currently exploring
+
+- Production ML infrastructure — extending Argus toward real (not injected) Spot interruption testing
+- Evaluation methodology for RAG and multi-agent LLM systems
+- PyTorch and deep learning beyond transfer learning
+
+---
 
 <div align="center">
 
-*I'm actively looking for **ML internship opportunities** and **research collaborations**.*
-*If you're building something interesting in AI/ML — let's connect.*
+[LinkedIn](https://www.linkedin.com/in/md-rayyan/) · [GitHub](https://github.com/Rayyan-mohammed)
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Let's%20Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-rayyan/)
-&nbsp;&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-Explore%20My%20Work-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rayyan-mohammed)
-
-<br/>
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake.svg" />
+  <img alt="" src="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake.svg" width="80%" />
+</picture>
 
 </div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%"/>
