@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=120&animation=fadeIn" width="100%"/>
+
 <div align="center">
 
 # Md Rayyan
@@ -6,13 +8,16 @@
 
 Building ML systems that hold up past the notebook: a retrieval pipeline that checks its own claims, training infrastructure that survives cloud interruptions, and a diagnostic ML pipeline built specifically to avoid the data-leakage mistakes that inflate most student results.
 
-[LinkedIn](https://www.linkedin.com/in/md-rayyan/) · [GitHub](https://github.com/Rayyan-mohammed) · [Email](mailto:rayyan1652@gmail.com) · Hyderabad, India
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-rayyan/)
+[![Email](https://img.shields.io/badge/Email-A78BFA?style=flat-square&logo=gmail&logoColor=white)](mailto:rayyan1652@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Rayyan-mohammed)
+&nbsp;&nbsp;📍 Hyderabad, India
 
 </div>
 
 <br/>
 
-## About
+## 👋 About
 
 Final-year B.Tech CSE (Data Science) student at NMIMS University, Hyderabad (2023–2027). I spend more time in `model.py` and `docker-compose.yml` than in lecture slides.
 
@@ -22,97 +27,117 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 
 ---
 
-## Stack
+## 🧠 Stack
 
-| | |
-|---|---|
-| **AI / ML** | PyTorch · TensorFlow/Keras · scikit-learn · XGBoost · SHAP · HuggingFace Transformers |
-| **LLM / RAG** | LangGraph · FAISS · ChromaDB · Claude API · claim verification pipelines |
-| **Backend & Serving** | FastAPI · Flask · Streamlit · Next.js |
-| **Cloud & Infrastructure** | AWS (EKS, EC2, Lambda, S3, IAM) · Kubernetes · Terraform · Docker · Google Cloud |
-| **MLOps & Tooling** | GitHub Actions · Prometheus/Grafana · Git |
+**AI / ML**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-1a1a2e?style=flat-square)
+![SHAP](https://img.shields.io/badge/SHAP-A78BFA?style=flat-square)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+
+**LLM / RAG**
+
+![LangGraph](https://img.shields.io/badge/LangGraph-1a1a2e?style=flat-square)
+![FAISS](https://img.shields.io/badge/FAISS-1a1a2e?style=flat-square)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-1a1a2e?style=flat-square)
+![Claude API](https://img.shields.io/badge/Claude%20API-A78BFA?style=flat-square)
+
+**Backend & Serving**
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+
+**Cloud & Infrastructure**
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+
+**MLOps & Tooling**
+
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 ---
 
-## Featured Projects
+## 🚀 Featured Projects
 
-### 1. CodeSwitch-Verify — Faithfulness-Checked RAG
+### 🗣️ CodeSwitch-Verify — Faithfulness-Checked RAG
 **[Repository](https://github.com/Rayyan-mohammed/HinglishRAG-Faith)**
 
-RAG chatbots that answer Hinglish (Hindi-English) questions about Indian government welfare schemes generate fluent answers — but nothing checks whether each individual claim in that answer is actually supported by the source document. In a domain where a wrong eligibility condition or deadline has real consequences, that gap matters.
+![Python](https://img.shields.io/badge/Python-A78BFA?style=flat-square) ![FAISS](https://img.shields.io/badge/FAISS-A78BFA?style=flat-square) ![Claude API](https://img.shields.io/badge/Claude%20API-A78BFA?style=flat-square) ![RAG](https://img.shields.io/badge/RAG-A78BFA?style=flat-square)
 
-**What it does:** every generated answer is decomposed into atomic claims; each claim is independently re-retrieved against the source corpus and judged — supported / contradicted / unverifiable — by an LLM-as-judge using majority vote over 3 samples, instead of being trusted outright.
+> RAG chatbots answering Hinglish questions about government schemes sound confident — but nothing checks whether each claim is actually true, in a domain where a wrong eligibility answer has real consequences.
 
-**Engineering:** `bge-m3` embeddings + FAISS retrieval · Claude Haiku 4.5 for generation, decomposition, and verification · scheme data pulled live from official `.gov.in` sources · design decisions tracked in ADRs.
-
-`Python` `FAISS` `Claude API` `RAG`
+- **Built:** decomposes every answer into atomic claims and verifies each independently against retrieved evidence — supported / contradicted / unverifiable — via LLM-as-judge (3-sample majority vote). `bge-m3` + FAISS retrieval, Claude Haiku 4.5, design decisions tracked in ADRs.
 
 ---
 
-### 2. BharatHealth Analyst — LLM Agent over National Health Survey Data
+### 🏥 BharatHealth Analyst — LLM Agent over National Health Survey Data
 **[Repository](https://github.com/Rayyan-mohammed/aarogya-lens)**
 
-India's NFHS-5 district health survey (706 districts × 448 indicators) is the kind of dataset that normally needs SQL and an analyst to query. Questions like *"which districts have the worst child anaemia"* shouldn't require that.
+![Python](https://img.shields.io/badge/Python-A78BFA?style=flat-square) ![LangGraph](https://img.shields.io/badge/LangGraph-A78BFA?style=flat-square) ![FastAPI](https://img.shields.io/badge/FastAPI-A78BFA?style=flat-square) ![Next.js](https://img.shields.io/badge/Next.js-A78BFA?style=flat-square) ![ChromaDB](https://img.shields.io/badge/ChromaDB-A78BFA?style=flat-square)
 
-**What it does:** a LangGraph ReAct agent with 7 tools (semantic search, pandas/SQL query, charting, trend and correlation analysis) sits over a pipeline that merges NFHS-5 with historical NFHS-4 trend data for 62 indicators, indexed in ChromaDB.
+> India's NFHS-5 health survey (706 districts × 448 indicators) needs SQL and an analyst to query today — public health questions shouldn't require that.
 
-**Engineering:** FastAPI backend (11 endpoints, rate limiting, request logging) · Next.js frontend · CI test suite at 93% API coverage.
-
-**Where it honestly stands:** all 7 tools are verified end-to-end against a live LLM and the full stack runs. The one thing not yet proven is a complete accuracy benchmark — blocked twice by free-tier rate limits. Stating that plainly beats rounding it up.
-
-`Python` `LangGraph` `FastAPI` `Next.js` `ChromaDB`
+- **Built:** a LangGraph ReAct agent with 7 tools (semantic search, SQL/pandas query, charting, trend & correlation analysis) over a merged NFHS-5 + NFHS-4 dataset in ChromaDB. FastAPI backend, Next.js frontend, CI at 93% coverage.
+- **Honestly:** the full accuracy benchmark isn't finished yet — blocked twice by rate limits. Said plainly rather than rounded up.
 
 ---
 
-### 3. Parkinson's Detection via Acoustic Biomarkers
+### 🎙️ Parkinson's Detection via Acoustic Biomarkers
 **[Repository](https://github.com/Rayyan-mohammed/Parkinson)**
 
-Most student ML projects on medical audio data report inflated accuracy because of subject-level data leakage — recordings from the same patient end up on both sides of the train/test split.
+![Python](https://img.shields.io/badge/Python-A78BFA?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-A78BFA?style=flat-square) ![XGBoost](https://img.shields.io/badge/XGBoost-A78BFA?style=flat-square) ![SHAP](https://img.shields.io/badge/SHAP-A78BFA?style=flat-square) ![HuggingFace](https://img.shields.io/badge/HuggingFace-A78BFA?style=flat-square)
 
-**What it does:** strict subject-level `GroupKFold` cross-validation so no patient crosses the split, hyperparameter search bounded inside inner folds, and SMOTE balancing applied only within training folds.
+> Most student medical-ML projects inflate accuracy via subject-level data leakage — a single patient's samples land on both sides of the train/test split.
 
-**Engineering:** `wav2vec2` transformer embeddings (768-dim) alongside hand-crafted acoustic features · SHAP for global (beeswarm) and per-patient (waterfall) explainability · built for cross-corpus evaluation against a second, independent dataset.
-
-**Result** (subject-isolated CV, reported with confidence intervals rather than one rounded number):
+- **Built:** strict subject-level `GroupKFold` cross-validation, hyperparameter search bounded to inner folds, SMOTE applied only within training folds, `wav2vec2` embeddings + SHAP explainability (global + per-patient).
 
 | Model | Accuracy | ROC-AUC |
 |---|---|---|
 | MLP | 0.756 ± 0.057 | 0.851 ± 0.116 |
 | XGBoost | 0.760 ± 0.114 | 0.793 ± 0.204 |
 
-`Python` `scikit-learn` `XGBoost` `SHAP` `HuggingFace`
+*(subject-isolated CV — wide confidence intervals reported honestly rather than hidden)*
 
 ---
 
-### 4. Argus — Spot-Resilient ML Training Orchestrator *(team project)*
+### ☁️ Argus — Spot-Resilient ML Training Orchestrator *(team project)*
 **[Repository](https://github.com/Rayyan-mohammed/Argus-Spot_Resilient_ML_Training_Orchestrator)**
 
-AWS Spot instances are 70–90% cheaper than on-demand but can be reclaimed on 2 minutes' notice — a long training job that ignores this loses everything since its last checkpoint.
+![Kubernetes](https://img.shields.io/badge/Kubernetes-A78BFA?style=flat-square) ![PyTorch](https://img.shields.io/badge/PyTorch-A78BFA?style=flat-square) ![FastAPI](https://img.shields.io/badge/FastAPI-A78BFA?style=flat-square) ![Terraform](https://img.shields.io/badge/Terraform-A78BFA?style=flat-square) ![AWS EKS](https://img.shields.io/badge/AWS%20EKS-A78BFA?style=flat-square) ![Grafana](https://img.shields.io/badge/Grafana-A78BFA?style=flat-square)
 
-**What it does:** a Transformer predicts interruption risk from Spot price history; a Kubernetes operator (`kopf`) acts on that prediction to checkpoint and reschedule the training pod before the interruption lands; the job resumes automatically.
+> AWS Spot instances are 70–90% cheaper than on-demand but reclaimable with 2 minutes' notice — a long training job loses everything since its last checkpoint.
 
-**Result:** validated on a real AWS EKS cluster — a live Spot drain was survived with a ~75-second recovery. A controlled 80-trial benchmark showed the predictive approach hit **zero wasted compute** vs. 202s with no protection, and recovered **~12× faster** than a purely reactive approach. Every claimed result ships with a documented "honest limitations" note rather than being oversold. Targeting a NeurIPS ML4Sys 2026 workshop poster.
-
-**My part:** built with a teammate — I worked the orchestration/deployment side: Helm chart deployment, concurrent load/stress testing and cost analysis, and fixes to the risk-threshold logic.
-
-`Kubernetes` `PyTorch` `FastAPI` `Terraform` `AWS EKS` `Prometheus/Grafana`
+- **Built:** a Transformer predicts interruption risk from Spot price history; a `kopf` Kubernetes operator checkpoints and reschedules the training pod before the interruption lands; the job resumes automatically.
+- **Result:** validated on a real AWS EKS cluster — survived a live Spot drain with a ~75s recovery. Predictive approach: **zero wasted compute** vs. 202s unprotected, **~12× faster** recovery than reactive. Honest limitations documented. Targeting a NeurIPS ML4Sys 2026 workshop poster.
+- **My part:** built with a teammate — Helm chart deployment, stress testing & cost analysis, risk-threshold bug fixes.
 
 ---
 
-### 5. OptiPrice — Dynamic Pricing Engine
-**[Repository](https://github.com/Rayyan-mohammed/OptiPrice)** · **[Live](https://optiprice-dynamic-pricing-agent.streamlit.app/)**
+### 💰 OptiPrice — Dynamic Pricing Engine
+**[Repository](https://github.com/Rayyan-mohammed/OptiPrice)** · **[Live App ↗](https://optiprice-dynamic-pricing-agent.streamlit.app/)**
 
-Retail pricing decisions are often static or purely rule-based, ignoring price elasticity, competitor movement, and margin trade-offs.
+![Python](https://img.shields.io/badge/Python-A78BFA?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-A78BFA?style=flat-square) ![SciPy](https://img.shields.io/badge/SciPy-A78BFA?style=flat-square) ![SHAP](https://img.shields.io/badge/SHAP-A78BFA?style=flat-square) ![Streamlit](https://img.shields.io/badge/Streamlit-A78BFA?style=flat-square)
 
-**What it does:** a constrained optimization engine (SciPy) that maximizes profit or revenue depending on objective, a Monte Carlo simulator modeling a 30-day forward A/B test under realistic demand volatility, and SHAP-based explainability so a pricing recommendation isn't a black box.
+> Retail pricing is often static or rule-based, ignoring price elasticity, competitor moves, and margin trade-offs.
 
-**Engineering:** live competitor pricing via the Mercado Libre API · batch CSV pipeline for pricing thousands of SKUs at once · deployed and publicly reachable.
-
-`Python` `scikit-learn` `SciPy` `SHAP` `Streamlit`
+- **Built:** a SciPy-constrained profit/revenue optimizer, a Monte Carlo 30-day A/B test simulator, SHAP-explained pricing recommendations, and live competitor pricing via the Mercado Libre API.
 
 ---
 
-## Additional Work
+## 🧩 Additional Work
 
 | Project | What it is | Stack |
 |---|---|---|
@@ -124,7 +149,7 @@ Retail pricing decisions are often static or purely rule-based, ignoring price e
 
 ---
 
-## How I approach ML problems
+## 🎯 How I Approach ML Problems
 
 - **Leakage is the default failure mode.** The Parkinson's project exists specifically to get subject-level cross-validation right, because most student medical-ML projects don't.
 - **An unverified result isn't a result.** Argus documents its limitations next to its wins. aarogya-lens says plainly which benchmark isn't finished instead of skipping it.
@@ -133,7 +158,7 @@ Retail pricing decisions are often static or purely rule-based, ignoring price e
 
 ---
 
-## Currently exploring
+## 🔭 Currently Exploring
 
 - Production ML infrastructure — extending Argus toward real (not injected) Spot interruption testing
 - Evaluation methodology for RAG and multi-agent LLM systems
@@ -143,7 +168,9 @@ Retail pricing decisions are often static or purely rule-based, ignoring price e
 
 <div align="center">
 
-[LinkedIn](https://www.linkedin.com/in/md-rayyan/) · [GitHub](https://github.com/Rayyan-mohammed) · [Email](mailto:rayyan1652@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-rayyan/)
+[![Email](https://img.shields.io/badge/Email-A78BFA?style=flat-square&logo=gmail&logoColor=white)](mailto:rayyan1652@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Rayyan-mohammed)
 
 <br/>
 
@@ -154,3 +181,5 @@ Retail pricing decisions are often static or purely rule-based, ignoring price e
 </picture>
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,11,20&height=60" width="100%"/>
