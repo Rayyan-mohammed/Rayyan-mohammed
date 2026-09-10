@@ -155,6 +155,18 @@ fun_fact: "Won TechFest 2025 Hackathon with a 6-person team 🏆"
 
 ---
 
+### 🐍 &nbsp;Contribution Snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake.svg" />
+    <img alt="github contribution snake animation" src="https://raw.githubusercontent.com/Rayyan-mohammed/Rayyan-mohammed/output/github-contribution-grid-snake.svg" width="100%" />
+  </picture>
+</div>
+
+---
+
 ### 💬 &nbsp;Let's Build Something Together
 
 <div align="center">
