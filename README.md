@@ -77,6 +77,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 
 ![Python](https://img.shields.io/badge/Python-8B5CF6?style=flat-square) ![FAISS](https://img.shields.io/badge/FAISS-8B5CF6?style=flat-square) ![Claude API](https://img.shields.io/badge/Claude%20API-8B5CF6?style=flat-square) ![RAG](https://img.shields.io/badge/RAG-8B5CF6?style=flat-square)
 
+![“](https://img.shields.io/badge/%E2%80%9C-8B5CF6?style=flat-square)
 > RAG chatbots answering Hinglish questions about government schemes sound confident — but nothing checks whether each claim is actually true, in a domain where a wrong eligibility answer has real consequences.
 
 - **Built:** decomposes every answer into atomic claims and verifies each independently against retrieved evidence — supported / contradicted / unverifiable — via LLM-as-judge (3-sample majority vote). `bge-m3` + FAISS retrieval, Claude Haiku 4.5, design decisions tracked in ADRs.
@@ -88,6 +89,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 
 ![Python](https://img.shields.io/badge/Python-0EA5E9?style=flat-square) ![LangGraph](https://img.shields.io/badge/LangGraph-0EA5E9?style=flat-square) ![FastAPI](https://img.shields.io/badge/FastAPI-0EA5E9?style=flat-square) ![Next.js](https://img.shields.io/badge/Next.js-0EA5E9?style=flat-square) ![ChromaDB](https://img.shields.io/badge/ChromaDB-0EA5E9?style=flat-square)
 
+![“](https://img.shields.io/badge/%E2%80%9C-0EA5E9?style=flat-square)
 > India's NFHS-5 health survey (706 districts × 448 indicators) needs SQL and an analyst to query today — public health questions shouldn't require that.
 
 - **Built:** a LangGraph ReAct agent with 7 tools (semantic search, SQL/pandas query, charting, trend & correlation analysis) over a merged NFHS-5 + NFHS-4 dataset in ChromaDB. FastAPI backend, Next.js frontend, CI at 93% coverage.
@@ -100,6 +102,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 
 ![Python](https://img.shields.io/badge/Python-F43F5E?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F43F5E?style=flat-square) ![XGBoost](https://img.shields.io/badge/XGBoost-F43F5E?style=flat-square) ![SHAP](https://img.shields.io/badge/SHAP-F43F5E?style=flat-square) ![HuggingFace](https://img.shields.io/badge/HuggingFace-F43F5E?style=flat-square)
 
+![“](https://img.shields.io/badge/%E2%80%9C-F43F5E?style=flat-square)
 > Most student medical-ML projects inflate accuracy via subject-level data leakage — a single patient's samples land on both sides of the train/test split.
 
 - **Built:** strict subject-level `GroupKFold` cross-validation, hyperparameter search bounded to inner folds, SMOTE applied only within training folds, `wav2vec2` embeddings + SHAP explainability (global + per-patient).
@@ -118,6 +121,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-F59E0B?style=flat-square) ![PyTorch](https://img.shields.io/badge/PyTorch-F59E0B?style=flat-square) ![FastAPI](https://img.shields.io/badge/FastAPI-F59E0B?style=flat-square) ![Terraform](https://img.shields.io/badge/Terraform-F59E0B?style=flat-square) ![AWS EKS](https://img.shields.io/badge/AWS%20EKS-F59E0B?style=flat-square) ![Grafana](https://img.shields.io/badge/Grafana-F59E0B?style=flat-square)
 
+![“](https://img.shields.io/badge/%E2%80%9C-F59E0B?style=flat-square)
 > AWS Spot instances are 70–90% cheaper than on-demand but reclaimable with 2 minutes' notice — a long training job loses everything since its last checkpoint.
 
 - **Built:** a Transformer predicts interruption risk from Spot price history; a `kopf` Kubernetes operator checkpoints and reschedules the training pod before the interruption lands; the job resumes automatically.
@@ -131,6 +135,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 
 ![Python](https://img.shields.io/badge/Python-10B981?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-10B981?style=flat-square) ![SciPy](https://img.shields.io/badge/SciPy-10B981?style=flat-square) ![SHAP](https://img.shields.io/badge/SHAP-10B981?style=flat-square) ![Streamlit](https://img.shields.io/badge/Streamlit-10B981?style=flat-square)
 
+![“](https://img.shields.io/badge/%E2%80%9C-10B981?style=flat-square)
 > Retail pricing is often static or rule-based, ignoring price elasticity, competitor moves, and margin trade-offs.
 
 - **Built:** a SciPy-constrained profit/revenue optimizer, a Monte Carlo 30-day A/B test simulator, SHAP-explained pricing recommendations, and live competitor pricing via the Mercado Libre API.
