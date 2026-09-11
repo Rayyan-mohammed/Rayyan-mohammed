@@ -9,7 +9,7 @@
 Building ML systems that hold up past the notebook: a retrieval pipeline that checks its own claims, training infrastructure that survives cloud interruptions, and a diagnostic ML pipeline built specifically to avoid the data-leakage mistakes that inflate most student results.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-rayyan/)
-[![Email](https://img.shields.io/badge/Email-A78BFA?style=flat-square&logo=gmail&logoColor=white)](mailto:rayyan1652@gmail.com)
+[![Email](https://img.shields.io/badge/Email-8B5CF6?style=flat-square&logo=gmail&logoColor=white)](mailto:rayyan1652@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Rayyan-mohammed)
 &nbsp;&nbsp;📍 Hyderabad, India
 
@@ -36,7 +36,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-1a1a2e?style=flat-square)
-![SHAP](https://img.shields.io/badge/SHAP-A78BFA?style=flat-square)
+![SHAP](https://img.shields.io/badge/SHAP-8B5CF6?style=flat-square)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 
 **LLM / RAG**
@@ -44,7 +44,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 ![LangGraph](https://img.shields.io/badge/LangGraph-1a1a2e?style=flat-square)
 ![FAISS](https://img.shields.io/badge/FAISS-1a1a2e?style=flat-square)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-1a1a2e?style=flat-square)
-![Claude API](https://img.shields.io/badge/Claude%20API-A78BFA?style=flat-square)
+![Claude API](https://img.shields.io/badge/Claude%20API-8B5CF6?style=flat-square)
 
 **Backend & Serving**
 
@@ -75,7 +75,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 ### 🗣️ CodeSwitch-Verify — Faithfulness-Checked RAG
 **[Repository](https://github.com/Rayyan-mohammed/HinglishRAG-Faith)**
 
-![Python](https://img.shields.io/badge/Python-A78BFA?style=flat-square) ![FAISS](https://img.shields.io/badge/FAISS-A78BFA?style=flat-square) ![Claude API](https://img.shields.io/badge/Claude%20API-A78BFA?style=flat-square) ![RAG](https://img.shields.io/badge/RAG-A78BFA?style=flat-square)
+![Python](https://img.shields.io/badge/Python-8B5CF6?style=flat-square) ![FAISS](https://img.shields.io/badge/FAISS-8B5CF6?style=flat-square) ![Claude API](https://img.shields.io/badge/Claude%20API-8B5CF6?style=flat-square) ![RAG](https://img.shields.io/badge/RAG-8B5CF6?style=flat-square)
 
 > RAG chatbots answering Hinglish questions about government schemes sound confident — but nothing checks whether each claim is actually true, in a domain where a wrong eligibility answer has real consequences.
 
@@ -86,7 +86,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 ### 🏥 BharatHealth Analyst — LLM Agent over National Health Survey Data
 **[Repository](https://github.com/Rayyan-mohammed/aarogya-lens)**
 
-![Python](https://img.shields.io/badge/Python-A78BFA?style=flat-square) ![LangGraph](https://img.shields.io/badge/LangGraph-A78BFA?style=flat-square) ![FastAPI](https://img.shields.io/badge/FastAPI-A78BFA?style=flat-square) ![Next.js](https://img.shields.io/badge/Next.js-A78BFA?style=flat-square) ![ChromaDB](https://img.shields.io/badge/ChromaDB-A78BFA?style=flat-square)
+![Python](https://img.shields.io/badge/Python-0EA5E9?style=flat-square) ![LangGraph](https://img.shields.io/badge/LangGraph-0EA5E9?style=flat-square) ![FastAPI](https://img.shields.io/badge/FastAPI-0EA5E9?style=flat-square) ![Next.js](https://img.shields.io/badge/Next.js-0EA5E9?style=flat-square) ![ChromaDB](https://img.shields.io/badge/ChromaDB-0EA5E9?style=flat-square)
 
 > India's NFHS-5 health survey (706 districts × 448 indicators) needs SQL and an analyst to query today — public health questions shouldn't require that.
 
@@ -98,7 +98,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 ### 🎙️ Parkinson's Detection via Acoustic Biomarkers
 **[Repository](https://github.com/Rayyan-mohammed/Parkinson)**
 
-![Python](https://img.shields.io/badge/Python-A78BFA?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-A78BFA?style=flat-square) ![XGBoost](https://img.shields.io/badge/XGBoost-A78BFA?style=flat-square) ![SHAP](https://img.shields.io/badge/SHAP-A78BFA?style=flat-square) ![HuggingFace](https://img.shields.io/badge/HuggingFace-A78BFA?style=flat-square)
+![Python](https://img.shields.io/badge/Python-F43F5E?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F43F5E?style=flat-square) ![XGBoost](https://img.shields.io/badge/XGBoost-F43F5E?style=flat-square) ![SHAP](https://img.shields.io/badge/SHAP-F43F5E?style=flat-square) ![HuggingFace](https://img.shields.io/badge/HuggingFace-F43F5E?style=flat-square)
 
 > Most student medical-ML projects inflate accuracy via subject-level data leakage — a single patient's samples land on both sides of the train/test split.
 
@@ -116,7 +116,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 ### ☁️ Argus — Spot-Resilient ML Training Orchestrator *(team project)*
 **[Repository](https://github.com/Rayyan-mohammed/Argus-Spot_Resilient_ML_Training_Orchestrator)**
 
-![Kubernetes](https://img.shields.io/badge/Kubernetes-A78BFA?style=flat-square) ![PyTorch](https://img.shields.io/badge/PyTorch-A78BFA?style=flat-square) ![FastAPI](https://img.shields.io/badge/FastAPI-A78BFA?style=flat-square) ![Terraform](https://img.shields.io/badge/Terraform-A78BFA?style=flat-square) ![AWS EKS](https://img.shields.io/badge/AWS%20EKS-A78BFA?style=flat-square) ![Grafana](https://img.shields.io/badge/Grafana-A78BFA?style=flat-square)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-F59E0B?style=flat-square) ![PyTorch](https://img.shields.io/badge/PyTorch-F59E0B?style=flat-square) ![FastAPI](https://img.shields.io/badge/FastAPI-F59E0B?style=flat-square) ![Terraform](https://img.shields.io/badge/Terraform-F59E0B?style=flat-square) ![AWS EKS](https://img.shields.io/badge/AWS%20EKS-F59E0B?style=flat-square) ![Grafana](https://img.shields.io/badge/Grafana-F59E0B?style=flat-square)
 
 > AWS Spot instances are 70–90% cheaper than on-demand but reclaimable with 2 minutes' notice — a long training job loses everything since its last checkpoint.
 
@@ -129,7 +129,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 ### 💰 OptiPrice — Dynamic Pricing Engine
 **[Repository](https://github.com/Rayyan-mohammed/OptiPrice)** · **[Live App ↗](https://optiprice-dynamic-pricing-agent.streamlit.app/)**
 
-![Python](https://img.shields.io/badge/Python-A78BFA?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-A78BFA?style=flat-square) ![SciPy](https://img.shields.io/badge/SciPy-A78BFA?style=flat-square) ![SHAP](https://img.shields.io/badge/SHAP-A78BFA?style=flat-square) ![Streamlit](https://img.shields.io/badge/Streamlit-A78BFA?style=flat-square)
+![Python](https://img.shields.io/badge/Python-10B981?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-10B981?style=flat-square) ![SciPy](https://img.shields.io/badge/SciPy-10B981?style=flat-square) ![SHAP](https://img.shields.io/badge/SHAP-10B981?style=flat-square) ![Streamlit](https://img.shields.io/badge/Streamlit-10B981?style=flat-square)
 
 > Retail pricing is often static or rule-based, ignoring price elasticity, competitor moves, and margin trade-offs.
 
@@ -169,7 +169,7 @@ I lead the **Code IT Club at NMIMS**, serve as a **Google Cloud Student Ambassad
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-rayyan/)
-[![Email](https://img.shields.io/badge/Email-A78BFA?style=flat-square&logo=gmail&logoColor=white)](mailto:rayyan1652@gmail.com)
+[![Email](https://img.shields.io/badge/Email-8B5CF6?style=flat-square&logo=gmail&logoColor=white)](mailto:rayyan1652@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Rayyan-mohammed)
 
 <br/>
