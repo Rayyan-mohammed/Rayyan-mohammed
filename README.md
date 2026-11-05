@@ -15,7 +15,7 @@
 <table>
   <tr><td><b>Builds</b></td><td>ML infrastructure, tool-using LLM agents, evaluation pipelines, research pipelines at full-dataset scale (1.34M proteins)</td></tr>
   <tr><td><b>Strongest work</b></td><td><a href="#argus">Argus</a> (spot-resilient training on AWS EKS) · <a href="#obscuron">Obscuron</a> (calibrated novelty detection) · <a href="#bharathealth-analyst">BharatHealth Analyst</a> (benchmarked LLM agent)</td></tr>
-  <tr><td><b>Research</b></td><td>arXiv preprint on predicting cloud interruptions · manuscript in preparation for ACM-BCB 2027</td></tr>
+  <tr><td><b>Research</b></td><td>Paper presented at IEEE ICAESIS-2026 (Obscuron) · arXiv preprint on predicting cloud interruptions (Argus)</td></tr>
   <tr><td><b>Now</b></td><td>B.Tech CSE (Data Science), SVKM's NMIMS Hyderabad, graduating June 2027</td></tr>
 </table>
 
@@ -67,6 +67,7 @@ Seven systems: three featured in depth, four in brief. Every number below comes 
 **What it showed.** 0.962 mean held-out-family AUROC across 903 Pfam families, with observed false-flag rates matching the nominal level. It also found that, on the 4,138 positives themselves, novelty ranks at chance (AUROC 0.47 against still-dark proteins). Novelty *anti-predicts* near-term characterisation, and the repository reports this rather than smoothing it over.<br>
 **My role.** Co-author with Angshuman Chakravertty. I owned the implementation and experimental-execution track: ingestion and snapshot differencing, embedding extraction, the EVT scorer implementation, immune-layer sweeps, full-scale flagging infrastructure and reproducibility tooling.<br>
 **Stack.** `Python` `PyTorch` `Hugging Face` `ESM-2` `ProstT5` `SciPy` `AWS (GPU)` `uv`<br>
+**Paper.** Presented at IEEE ICAESIS-2026 ([see Research](#04-research)).<br>
 **Links.** [Repository](https://github.com/Angshuman1211/Obscuron) · [Decision log](https://github.com/Angshuman1211/Obscuron/blob/main/docs/problems_and_decisions.md) · [Reproducibility notes](https://github.com/Angshuman1211/Obscuron/blob/main/docs/reproducibility.md)
 
 <details>
@@ -178,8 +179,8 @@ Drawn from each repository's code and documentation. In team projects, emerald m
 
 | Work | Authors | Status |
 |---|---|---|
+| **Calibrated Novelty Detection for Microbial Dark Matter via Leakage-Controlled Retrospective Validation** (Obscuron) | A. Chakravertty, **MD Rayyan** | Presented at IEEE ICAESIS-2026, Mohan Babu University, Tirupati, 29–31 October 2026. |
 | **Argus: A Real-EKS Study of When Predicting Spot Interruptions Beats Simple Checkpointing** | A. Chakravertty, **MD Rayyan** | Preprint, [arXiv:2609.39067](https://arxiv.org/abs/2609.39067) (v1, Sep 2026). Not accepted at the NeurIPS 2026 ML for Systems workshop. A v2 answering the reviews, with real-reclaim results, is [in the repository](https://github.com/Angshuman1211/Argus-Spot_Resilient_ML_Training_Orchestrator/tree/master/Paper/v2) and not yet on arXiv. |
-| **Obscuron:** calibrated novelty detection for microbial dark matter, validated retrospectively | A. Chakravertty, **MD Rayyan** | Manuscript in preparation, targeting ACM-BCB 2027. Not yet submitted. |
 | **CALIBER:** operator-shift-robust conformal hallucination flagging for image reconstruction | Three-track team; theory track is mine | Ongoing. Preprint draft is in the repository and not yet posted. |
 
 <img src="assets/divider.svg" width="100%" alt="">
