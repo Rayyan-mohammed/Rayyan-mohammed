@@ -258,7 +258,7 @@ PROJECTS = {
     "argus": dict(index="01", name="Argus", kind="ML INFRASTRUCTURE  ·  KUBERNETES  ·  AWS EKS",
                   role="CO-AUTHOR  ·  ML LAYER",
                   tagline="Keeps PyTorch training alive across EC2 Spot reclaims: predict, checkpoint, migrate, resume.",
-                  metrics=[("~75 s", "resume after a real Spot drain on EKS"),
+                  metrics=[("~75 s", "resume after a Spot warning, real EKS"),
                            ("152", "real reclaims labelled by a sensor fleet"),
                            ("1.14× vs 1.34×", "slowdown vs Young-Daly, 300 s ckpt")]),
     # Obscuron: README results 1-2, results/ held-out-family eval
@@ -279,7 +279,7 @@ PROJECTS = {
     "doppel": dict(index="04", name="Doppel", kind="PRIVACY EVALUATION  ·  SYNTHETIC EHR",
                    role="TEAM OF 4  ·  EVALUATION TRACK",
                    tagline="One protocol for fidelity, utility and privacy of synthetic health-record generators.",
-                   metrics=[("36%", "training patients exposed at 1% FPR (diffusion)"),
+                   metrics=[("36%", "training records identified at 1% FPR"),
                             ("180", "runs: 9 generator arms × 20 seeds")]),
     # CALIBER: README 'What exists today' (CT coverage 0.693 at 30 views; 0.902-0.923 restored; 836 tests)
     "caliber": dict(index="05", name="CALIBER", kind="CONFORMAL PREDICTION  ·  MEDICAL IMAGING",
@@ -287,12 +287,13 @@ PROJECTS = {
                     tagline="Reliability certificates for generative image reconstruction when the scanner changes.",
                     metrics=[("0.69 → 0.90+", "CT coverage: naive vs group-conditional"),
                              ("2", "modalities: accelerated MRI and CT")]),
-    # DermaAegis: models/eval_metadata_stratified_on_grouped.json (tta_test_accuracy 0.8575)
+    # DermaAegis: no accuracy shown. The grouped-split score was computed with a checkpoint trained on the
+    # image-stratified split (eval_metadata_stratified_on_grouped.json), so it may include leakage.
     "dermaaegis": dict(index="06", name="DermaAegis", kind="COMPUTER VISION  ·  EXPLAINABILITY",
                        role="TEAM  ·  CONTAINERISATION",
                        tagline="Dermoscopic lesion classification with Grad-CAM and uncertainty. A research prototype.",
-                       metrics=[("85.75%", "test accuracy, TTA ×4, grouped split"),
-                                ("7", "HAM10000 lesion classes")]),
+                       metrics=[("7", "HAM10000 lesion classes"),
+                                ("Grad-CAM", "+ MC-dropout uncertainty")]),
     # PharmaFlow: database/medical_management.sql (31 tables), app/init.php, public/login.php
     "pharmaflow": dict(index="07", name="PharmaFlow Pro", kind="SOFTWARE SYSTEMS  ·  SECURITY  ·  AWS",
                        role="SOLE AUTHOR",
@@ -306,19 +307,19 @@ ARCH = {
                   note="operator signals · pod owns the flush",
                   columns=[
                       dict(head="SIGNAL", boxes=[dict(t="Spot price feed", s="Lambda → S3, 5-min"),
-                                                 dict(t="Capacity signal", s="placement score + age")]),
+                                                 dict(t="Capacity signal", s="placement score + age", hl=True)]),
                       dict(head="PREDICT", boxes=[dict(t="Risk service", s="FastAPI /reclaim_risk", hl=True),
                                                   dict(t="Risk models", s="XGBoost · logistic", hl=True)]),
                       dict(head="DECIDE", boxes=[dict(t="kopf operator", s="SpotResilientJob CRD"),
                                                  dict(t="Risk > threshold", s="10% alarm budget")]),
-                      dict(head="CHECKPOINT", boxes=[dict(t="Flush handshake", s="trigger → ack, S3"),
+                      dict(head="CHECKPOINT", boxes=[dict(t="Flush handshake", s="trigger → ack, S3", hl=True),
                                                      dict(t="S3 checkpoint", s="atomic upload")]),
                       dict(head="RECOVER", boxes=[dict(t="Cordon + recreate", s="healthy node"),
-                                                  dict(t="Resume epoch N", s="~75 s on real EKS")]),
+                                                  dict(t="Resume epoch N", s="from S3 checkpoint")]),
                   ],
                   loop=dict(to=2, label="15-min cooldown before the next migration"),
-                  band=("REACTIVE PATH", "AWS Node Termination Handler → drain → SIGTERM handler checkpoints → same recovery. "
-                                         "Prometheus + Grafana observe both.")),
+                  band=("REACTIVE PATH", "AWS Node Termination Handler → drain → SIGTERM checkpoint → same recovery; "
+                                         "~75 s to resume in the real-EKS drill.")),
     "obscuron": dict(label="OBSCURON", title="Retrospective validation: freeze the past, grade against the future",
                      note="metrics frozen before any scorer ran",
                      columns=[
@@ -346,7 +347,7 @@ ARCH = {
                                                        dict(t="ChromaDB", s="MiniLM embeddings")]),
                              dict(head="AGENT", boxes=[dict(t="LangGraph ReAct", s="plans tool chains", hl=True),
                                                        dict(t="7 tools", s="search·pandas·SQL·chart", hl=True),
-                                                       dict(t="Sandboxed exec", s="whitelisted pandas")]),
+                                                       dict(t="Restricted exec", s="whitelisted pandas")]),
                              dict(head="SERVE", boxes=[dict(t="FastAPI", s="11 endpoints, limits"),
                                                        dict(t="Static web app", s="Ask·Explore·Correlate")]),
                              dict(head="EVALUATE", boxes=[dict(t="200-Q benchmark", s="computed ground truth", hl=True),
@@ -355,7 +356,7 @@ ARCH = {
                          band=("OPS", "Watchdog keeps the API and Cloudflare tunnel alive. "
                                       "Explore runs offline from data baked into the page.")),
     "doppel": dict(label="DOPPEL", title="Generators are graded on one dataset, one protocol, one environment",
-                   note="my track: 03 + 04",
+                   note="my track: evaluation (03–05)",
                    columns=[
                        dict(head="DATA", boxes=[dict(t="MIMIC-III Demo", s="129 admissions"),
                                                 dict(t="Patient split", s="94 train · 35 holdout")]),
@@ -366,8 +367,8 @@ ARCH = {
                                                     dict(t="Privacy", s="shadow-model MIA", hl=True)]),
                        dict(head="CALIBRATE", boxes=[dict(t="Attack controls", s="ceiling · floor", hl=True),
                                                      dict(t="Worst-of-3", s="privacy score", hl=True)]),
-                       dict(head="DECIDE", boxes=[dict(t="Pareto frontier", s="bootstrap sensitivity"),
-                                                  dict(t="React dashboard", s="score your own file")]),
+                       dict(head="DECIDE", boxes=[dict(t="Pareto frontier", s="bootstrap sensitivity", hl=True),
+                                                  dict(t="React dashboard", s="score your own file", hl=True)]),
                    ],
                    band=("SCALE", "180 runs: 9 arms × 20 seeds. Docker images and Kubernetes Jobs exist; "
                                   "stages are launched manually.")),
@@ -399,8 +400,8 @@ ARCH = {
                            dict(head="SERVE", boxes=[dict(t="FastAPI", s="inference API"),
                                                      dict(t="Docker Compose", s="API + UI", hl=True)]),
                        ],
-                       band=("LIMITS", "85.75% test accuracy (TTA). Weak recall on rare classes (akiec 0.36). "
-                                       "Not clinically validated.")),
+                       band=("LIMITS", "Research prototype, not clinically validated. Weak recall on rare classes "
+                                       "(akiec 0.36).")),
     "pharmaflow": dict(label="PHARMAFLOW PRO", title="Roles → authentication → business workflows → database → audit controls",
                        note="sole author",
                        columns=[

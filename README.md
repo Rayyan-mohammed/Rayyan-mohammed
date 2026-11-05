@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <b>I build machine-learning systems end to end: the model, the evidence that it works, and the infrastructure that keeps it running.</b>
+  <b>Every result on this page links back to the file it came from, and every team project says which part was mine.</b>
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <table>
-  <tr><td><b>Builds</b></td><td>ML infrastructure, tool-using LLM agents, evaluation pipelines, research code that runs at scale</td></tr>
+  <tr><td><b>Builds</b></td><td>ML infrastructure, tool-using LLM agents, evaluation pipelines, research pipelines at full-dataset scale (1.34M proteins)</td></tr>
   <tr><td><b>Strongest work</b></td><td><a href="#argus">Argus</a> (spot-resilient training on AWS EKS) · <a href="#obscuron">Obscuron</a> (calibrated novelty detection) · <a href="#bharathealth-analyst">BharatHealth Analyst</a> (benchmarked LLM agent)</td></tr>
   <tr><td><b>Research</b></td><td>arXiv preprint on predicting cloud interruptions · manuscript in preparation for ACM-BCB 2027</td></tr>
   <tr><td><b>Now</b></td><td>B.Tech CSE (Data Science), SVKM's NMIMS Hyderabad, graduating June 2027</td></tr>
@@ -25,7 +25,7 @@
 
 I work where machine learning meets the systems around it. My projects usually start from a question a model can't answer on its own. *Will this training job survive a Spot reclaim? Does this novelty score mean anything? Does the agent's answer match the data?* They end with a running system, a benchmark, and a written record of what held up and what didn't.
 
-My default unit of work is a pipeline with a test, not a notebook with a plot. That means evaluation protocols frozen before results arrive, leakage checks before headline numbers, decision logs next to the code, and limitations stated in the README instead of discovered by a reviewer. Most of my strongest work is collaborative, so each project below says which part was mine.
+My default unit of work is a pipeline with an evaluation, not a notebook with a plot. That means evaluation protocols frozen before results arrive, leakage checks before headline numbers, decision logs next to the code, and limitations stated in the README instead of discovered by a reviewer. Most of my strongest work is collaborative, so each project below says which part was mine.
 
 Outside the repositories I lead the Code IT Club at NMIMS Hyderabad and serve as a Google Cloud Student Ambassador.
 
@@ -37,19 +37,19 @@ Seven systems: three featured in depth, four in brief. Every number below comes 
 
 ### Argus
 
-<a href="https://github.com/Angshuman1211/Argus-Spot_Resilient_ML_Training_Orchestrator"><img src="assets/card-argus.svg" width="100%" alt="Argus, ML infrastructure on Kubernetes and AWS EKS. Co-author, ML layer. Resumed training about 75 seconds after a real Spot drain on EKS; 152 real reclaims labelled by a sensor fleet; 1.14 times slowdown versus 1.34 times for Young-Daly checkpointing at 300-second checkpoints."></a>
+<a href="https://github.com/Angshuman1211/Argus-Spot_Resilient_ML_Training_Orchestrator"><img src="assets/card-argus.svg" width="100%" alt="Argus, ML infrastructure on Kubernetes and AWS EKS. Co-author, ML layer. Resumed training about 75 seconds after a Spot interruption warning on real EKS Spot nodes; 152 real reclaims labelled by a sensor fleet; 1.14 times slowdown versus 1.34 times for Young-Daly checkpointing at 300-second checkpoints."></a>
 
 **Problem.** EC2 Spot capacity costs 70–90% less than on-demand but can be reclaimed with two minutes' notice, so a long training run loses everything since its last checkpoint.<br>
 **Approach.** A risk service scores interruption risk. A `kopf` Kubernetes operator acts on it: it tells the training pod to flush a checkpoint to S3, cordons the node, recreates the pod elsewhere, and the job resumes from the last epoch. The AWS two-minute warning drives the same recovery path reactively.<br>
-**What it showed.** Reacting to the notice is enough while a checkpoint fits inside two minutes. Beyond that, the retrained model beats every non-learned baseline in the trace-driven benchmark. On 152 real reclaims, though, price history has no predictive skill (AUROC 0.53), while AWS's placement score does (0.74–0.77). Both results are in the paper.<br>
-**My role.** Co-author with [Angshuman Chakravertty](https://github.com/Angshuman1211). I owned the ML layer: feature pipeline, risk models, FastAPI prediction service, the PyTorch training job, the benchmark harness and trace simulator, and the real-reclaim sensor campaign.<br>
+**What it showed.** Reacting to the notice is enough while a checkpoint fits inside two minutes. Beyond that, the retrained model beats every non-learned baseline in the trace-driven benchmark. On 152 real reclaims, though, price history has no predictive skill (AUROC 0.53), while AWS's placement score does (0.74–0.77). Both results are in the revised paper in the repository.<br>
+**My role.** Co-author with [Angshuman Chakravertty](https://github.com/Angshuman1211). I owned the ML layer: feature pipeline, risk models, FastAPI prediction service, the PyTorch training job, the benchmark harness and trace simulator, the real-reclaim sensor campaign, and the v2 operator changes (flush handshake, migration cooldown, pod recreation, capacity risk signal).<br>
 **Stack.** `Python` `PyTorch` `XGBoost` `FastAPI` `Kubernetes` `kopf` `Helm` `AWS EKS · S3 · Lambda · SQS` `Prometheus` `Grafana` `MLflow`<br>
 **Links.** [Repository](https://github.com/Angshuman1211/Argus-Spot_Resilient_ML_Training_Orchestrator) · [Paper, arXiv:2609.39067](https://arxiv.org/abs/2609.39067) · [Project page](https://angshuman1211.github.io/Argus-Spot_Resilient_ML_Training_Orchestrator/) · [Decision log](https://github.com/Angshuman1211/Argus-Spot_Resilient_ML_Training_Orchestrator/blob/master/docs/problems_and_decisions.md)
 
 <details>
 <summary><b>Limitations, as stated in the repository</b></summary>
 
-- The real-EKS drill used a schema-conformant *injected* interruption warning, not an AWS-issued FIS reclaim.
+- The ~75 s real-EKS recovery came from the reactive path, using a schema-conformant *injected* interruption warning rather than an AWS-issued FIS reclaim.
 - The price model is trained on a proxy label (price spikes) and has no skill on real reclaims.
 - The capacity model comes from two days of small sensor instances in four regions.
 - The operator manages pods individually and does not coordinate a multi-node synchronous job.
@@ -64,7 +64,7 @@ Seven systems: three featured in depth, four in brief. Every number below comes 
 
 **Problem.** About 22% of proteins in the benchmark panel match no known family. A detector that claims to find the interesting ones has no ground truth to be checked against.<br>
 **Approach.** Manufacture one retrospectively. Freeze reference databases at a 2021–22 snapshot, score what was "dark" then, and grade those scores against a later snapshot in which some of those proteins have since been characterised. The core scorer is a kNN distance in ESM-2 embedding space, calibrated with an extreme-value (GPD) tail fit so its output is a p-value with a checkable false-flag rate. Four further layers add structure-aware embeddings, immune-inspired negative selection, multi-signal convergence and coding-structure statistics.<br>
-**What it showed.** 0.962 mean held-out-family AUROC across 903 Pfam families, with observed false-flag rates matching the nominal level. It also found that novelty *anti-predicts* near-term characterisation, which is reported rather than smoothed over.<br>
+**What it showed.** 0.962 mean held-out-family AUROC across 903 Pfam families, with observed false-flag rates matching the nominal level. It also found that, on the 4,138 positives themselves, novelty ranks at chance (AUROC 0.47 against still-dark proteins). Novelty *anti-predicts* near-term characterisation, and the repository reports this rather than smoothing it over.<br>
 **My role.** Co-author with Angshuman Chakravertty. I owned the implementation and experimental-execution track: ingestion and snapshot differencing, embedding extraction, the EVT scorer implementation, immune-layer sweeps, full-scale flagging infrastructure and reproducibility tooling.<br>
 **Stack.** `Python` `PyTorch` `Hugging Face` `ESM-2` `ProstT5` `SciPy` `AWS (GPU)` `uv`<br>
 **Links.** [Repository](https://github.com/Angshuman1211/Obscuron) · [Decision log](https://github.com/Angshuman1211/Obscuron/blob/main/docs/problems_and_decisions.md) · [Reproducibility notes](https://github.com/Angshuman1211/Obscuron/blob/main/docs/reproducibility.md)
@@ -86,7 +86,7 @@ Seven systems: three featured in depth, four in brief. Every number below comes 
 <a href="https://github.com/Rayyan-mohammed/aarogya-lens"><img src="assets/card-bharathealth.svg" width="100%" alt="BharatHealth Analyst, agentic AI for health analytics. Sole author. 200 benchmark questions with computed ground truth; 71.1 percent exact-answer accuracy and 5.0 percent hallucination rate; 706 districts by 448 columns, reproducible with DVC."></a>
 
 **Problem.** India's National Family Health Survey (NFHS-5) publishes district-level data for 706 districts as CSVs and long PDF reports. A simple policy question means hand-sorting columns, and a trend question means aligning a second survey.<br>
-**Approach.** A LangGraph ReAct agent plans calls across seven tools over a DVC-tracked dataset: semantic search in ChromaDB, sandboxed pandas, SQL, charts, trend and correlation analysis. It is served by FastAPI behind a static web app with Ask, Explore and Correlate views.<br>
+**Approach.** A LangGraph ReAct agent plans calls across seven tools over a DVC-tracked dataset: semantic search in ChromaDB, restricted pandas execution, SQL, charts, trend and correlation analysis. It is served by FastAPI behind a static web app with Ask, Explore and Correlate views.<br>
 **What it showed.** On a 200-question benchmark with programmatically computed ground truth: **71.1%** exact-answer accuracy, **82.0%** answer faithfulness, **5.0%** hallucination rate. Four scorer bugs were found and fixed and the run rescored. A routing fix raised trend-question accuracy from 54.4% to 84.5% on a full re-run of that category.<br>
 **My role.** Sole author: data pipeline, agent and tools, API, web app, evaluation harness, deployment.<br>
 **Stack.** `Python` `LangGraph` `ChromaDB` `sentence-transformers` `pandas` `FastAPI` `Next.js` `DVC` `GitHub Actions` `Docker`<br>
@@ -106,9 +106,9 @@ Seven systems: three featured in depth, four in brief. Every number below comes 
 
 ### Doppel
 
-<a href="https://github.com/Angshuman1211/Doppel"><img src="assets/card-doppel.svg" width="100%" alt="Doppel, privacy evaluation of synthetic electronic health records. Team of four, evaluation track. The diffusion generator exposed 36 percent of training patients at a 1 percent false-positive rate; 180 runs across 9 generator arms and 20 seeds."></a>
+<a href="https://github.com/Angshuman1211/Doppel"><img src="assets/card-doppel.svg" width="100%" alt="Doppel, privacy evaluation of synthetic electronic health records. Team of four, evaluation track. A membership attack identified 36 percent of the diffusion generator's training records at a 1 percent false-positive rate; 180 runs across 9 generator arms and 20 seeds."></a>
 
-A benchmark that grades synthetic health-record generators (Gaussian copula, CTGAN, TVAE, tabular diffusion) on fidelity, downstream utility and privacy under a single protocol. The result is a trade-off, not a winner. The diffusion model fits best and leaks most. The privacy attacks are validated against a generator known to memorise, and a weak attack that rated that memoriser safest is why privacy is scored as the worst of three attacks.<br>
+A benchmark that grades synthetic health-record generators (Gaussian copula, CTGAN, TVAE, tabular diffusion) on fidelity, downstream utility and privacy under a single protocol. The result is a trade-off, not a winner. The diffusion model has the best fit of any neural generator, and it also leaks most: a membership attack identifies 36% of its training records at a 1% false-positive rate. The attacks are calibrated against exact-copy and unseen-data controls. A weak 4-column attack rated TVAE the safest arm (0.499) even though TVAE copies about half its training rows, which is why privacy is scored as the worst of three attacks.<br>
 **My role.** Evaluation track in a team of four: evaluation protocol, fidelity, utility and membership-inference modules, attack calibration, Pareto analysis, the literature survey and the React results dashboard.<br>
 **Stack.** `Python` `scikit-learn` `PyTorch` `CTGAN` `React` `Docker` `Kubernetes`<br>
 **Links.** [Repository](https://github.com/Angshuman1211/Doppel) · [Live dashboard](https://doppel-six.vercel.app/) · [Evaluation protocol](https://github.com/Angshuman1211/Doppel/blob/main/docs/eval_protocol.md)
@@ -128,7 +128,7 @@ Conformal reliability certificates for generative-prior image reconstruction ass
 
 ### DermaAegis
 
-<a href="https://github.com/Angshuman1211/DermaAegis-SmartHorizon"><img src="assets/card-dermaaegis.svg" width="100%" alt="DermaAegis, computer vision with explainability. Team, containerisation. 85.75 percent test accuracy with test-time augmentation on a grouped split; 7 HAM10000 lesion classes."></a>
+<a href="https://github.com/Angshuman1211/DermaAegis-SmartHorizon"><img src="assets/card-dermaaegis.svg" width="100%" alt="DermaAegis, computer vision with explainability. Team project; my part was containerisation. Seven HAM10000 lesion classes, Grad-CAM explanations and Monte Carlo dropout uncertainty."></a>
 
 Seven-class dermoscopic lesion classification on HAM10000. It uses an EfficientNetB3 transfer-learning backbone, test-time augmentation, Monte Carlo dropout for uncertainty, Grad-CAM overlays to show which region drove each prediction, and a skin-tone (Fitzpatrick) bias analysis, served through FastAPI with React and Streamlit front ends. It is a research prototype, not a diagnostic tool: recall on rare classes is weak (actinic keratosis 0.36).<br>
 **My role.** Team project. I containerised the stack: Dockerfiles for the API and front end, and the Docker Compose setup.<br>
@@ -166,7 +166,7 @@ Drawn from each repository's code and documentation. In team projects, emerald m
 
 <img src="assets/arch-caliber.svg" width="100%" alt="CALIBER architecture. Operators: a registry of MRI masks and CT view sets with range and null-space split. Reconstruct: DPS, DDNM and FlowDPS posterior samplers behind one interface. Score: operator-aware per-region scores cached in a score bank. Calibrate: naive transfer breaks under shift; group-conditional calibration restores nominal coverage. Bound: a coverage-gap bound from Kolmogorov distance to operator distance, with numerical checks on synthetic operators.">
 
-<img src="assets/arch-dermaaegis.svg" width="100%" alt="DermaAegis architecture. A dermoscopic image is resized to 300 by 300 and classified by EfficientNetB3 with test-time augmentation and Monte Carlo dropout. Grad-CAM overlays and a Fitzpatrick skin-tone check explain the result. FastAPI serves it; Docker Compose packages the API and interface. A research prototype, not clinically validated.">
+<img src="assets/arch-dermaaegis.svg" width="100%" alt="DermaAegis architecture. A dermoscopic image is resized to 300 by 300 and classified by EfficientNetB3 with test-time augmentation and Monte Carlo dropout. Grad-CAM overlays and a Fitzpatrick skin-tone check explain the result. FastAPI serves it; Docker Compose, my part, packages the API and interface. A research prototype, not clinically validated.">
 
 <img src="assets/arch-pharmaflow.svg" width="100%" alt="PharmaFlow Pro architecture. Roles: administrator, pharmacist, staff. Auth: login throttling and a permission matrix. Workflows: sales and returns, purchases, prescriptions. Data: MySQL with 31 tables through PDO prepared statements, batches and expiry. Control: activity log, reorder rules, backups. CSRF tokens and session regeneration; deployed on Elastic Beanstalk with RDS.">
 
@@ -178,9 +178,9 @@ Drawn from each repository's code and documentation. In team projects, emerald m
 
 | Work | Authors | Status |
 |---|---|---|
-| **Argus: A Real-EKS Study of When Predicting Spot Interruptions Beats Simple Checkpointing** | A. Chakravertty, **MD Rayyan** | Preprint, [arXiv:2609.39067](https://arxiv.org/abs/2609.39067) (v1, Sep 2026). Reviewed at the ML for Systems workshop at NeurIPS 2026; a revised v2 answering the reviews, with real-reclaim results, is [in the repository](https://github.com/Angshuman1211/Argus-Spot_Resilient_ML_Training_Orchestrator/tree/master/Paper/v2). |
+| **Argus: A Real-EKS Study of When Predicting Spot Interruptions Beats Simple Checkpointing** | A. Chakravertty, **MD Rayyan** | Preprint, [arXiv:2609.39067](https://arxiv.org/abs/2609.39067) (v1, Sep 2026). Not accepted at the NeurIPS 2026 ML for Systems workshop. A v2 answering the reviews, with real-reclaim results, is [in the repository](https://github.com/Angshuman1211/Argus-Spot_Resilient_ML_Training_Orchestrator/tree/master/Paper/v2) and not yet on arXiv. |
 | **Obscuron:** calibrated novelty detection for microbial dark matter, validated retrospectively | A. Chakravertty, **MD Rayyan** | Manuscript in preparation, targeting ACM-BCB 2027. Not yet submitted. |
-| **CALIBER:** operator-shift-robust conformal hallucination flagging for image reconstruction | Three-track team; theory track is mine | Ongoing. Preprint draft in progress, not yet public. |
+| **CALIBER:** operator-shift-robust conformal hallucination flagging for image reconstruction | Three-track team; theory track is mine | Ongoing. Preprint draft is in the repository and not yet posted. |
 
 <img src="assets/divider.svg" width="100%" alt="">
 
@@ -194,8 +194,8 @@ Listed only where a repository shows the tool doing real work.
 | Foundation models | Hugging Face Transformers, ESM-2, ProstT5, wav2vec2, sentence-transformers | Obscuron, Parkinson's, BharatHealth |
 | LLMs and agents | LangGraph, ChromaDB, FAISS, Claude API, Gemini API, claim-level RAG verification | BharatHealth, CodeSwitch-Verify |
 | Evaluation and statistics | Conformal prediction, extreme-value calibration, membership-inference attacks, grouped cross-validation, bootstrap intervals | CALIBER, Obscuron, Doppel, Parkinson's |
-| Cloud and infrastructure | AWS (EKS, EC2, S3, Lambda, SQS, IAM/IRSA, Elastic Beanstalk, RDS), Kubernetes (operators, Helm), Docker | Argus, PharmaFlow, DermaAegis |
-| MLOps and observability | MLflow, DVC, GitHub Actions (CI, OIDC deploys), Prometheus, Grafana | Argus, BharatHealth |
+| Cloud and infrastructure | AWS (EC2, S3, EKS deployments, Elastic Beanstalk, RDS), Kubernetes (kopf operator, Helm), Docker | Argus, PharmaFlow, DermaAegis |
+| MLOps | MLflow, DVC, GitHub Actions (CI), uv | Argus, BharatHealth, Obscuron |
 | Backend and apps | FastAPI, Flask, Streamlit, Next.js, React, PHP | BharatHealth, Doppel, PharmaFlow, OptiPrice, phishing URL detector |
 | Data | pandas, NumPy, SQL (MySQL, SQLite), Parquet | Everywhere |
 
@@ -208,9 +208,9 @@ Listed only where a repository shows the tool doing real work.
 | **Evaluate before claiming** | BharatHealth's agent is graded on 200 questions with computed ground truth. When four scorer bugs turned up, the run was rescored, not re-explained. |
 | **Leakage is the default failure mode** | Obscuron separates a protein model whose pretraining predates the benchmark window from a genome model whose pretraining overlaps it. Doppel splits by patient, not admission. |
 | **Calibrate, then trust** | Obscuron's scores are tail p-values with measured false-flag rates. CALIBER tests exactly when a conformal guarantee survives a change of scanner settings. |
-| **Validate the attack before the defence** | Doppel's privacy attacks are checked against a generator known to memorise. One weak attack rated it the safest, so it can't be the only attack. |
+| **Validate the attack before the defence** | Doppel's privacy attacks are calibrated against exact-copy and unseen-data controls. One weak attack rated a generator that copies half its training rows the safest, so no single attack decides the privacy score. |
 | **Real failure modes need real infrastructure** | Argus's predictive path was drilled on a real EKS cluster. The drill surfaced five defects, and each was fixed. |
-| **Retract what doesn't hold** | Argus reports that its price model has no skill on real reclaims, and withdrew a headline recovery figure when a re-run did not support it. |
+| **Retract what doesn't hold** | Argus reports that its price model has no skill on real reclaims, and that an earlier model's 21.8× lift fell to 2.2× on later data. |
 | **Write decisions down** | Argus, Doppel, Obscuron and CALIBER each keep a numbered decision log next to the code. |
 | **Security and cost are requirements** | PharmaFlow ships CSRF protection, login throttling and an audit log. Argus ends every cloud session with a teardown check after a $66 surprise bill. |
 
@@ -221,8 +221,8 @@ Listed only where a repository shows the tool doing real work.
 Based on what I committed in October and November 2026:
 
 - **Real labels for infrastructure ML.** Replacing proxy labels with measured ones. Argus's sensor fleet produced 152 real Spot reclaims, and a capacity-based risk model now serves alongside the price model.
-- **Failure analysis for vision models.** Contributing to [Vision Error Observatory](https://github.com/Md-Zeeshan-Ali/vision-error-observatory), which locates where monocular depth models fail and tests the explanations by editing images and re-running the model.
-- **Theory against measurement.** Checking CALIBER's coverage-gap bound numerically on synthetic operators before comparing it with measured score banks.
+- **Failure analysis for vision models.** Co-developing [Vision Error Observatory](https://github.com/Md-Zeeshan-Ali/vision-error-observatory), which locates where monocular depth models fail and tests the explanations by editing images and re-running the model.
+- **Theory against measurement.** Testing CALIBER's coverage-gap bound against synthetic operators and the measured MRI and CT score banks.
 
 <details>
 <summary><b>More work</b></summary>
@@ -230,7 +230,7 @@ Based on what I committed in October and November 2026:
 
 | Project | What it is |
 |---|---|
-| [CodeSwitch-Verify](https://github.com/Rayyan-mohammed/HinglishRAG-Faith) · [demo](https://d1zhxd8az51i27.cloudfront.net) | RAG for Hinglish government-scheme questions that checks every claim in an answer against retrieved evidence before it reaches the user |
+| [CodeSwitch-Verify](https://github.com/Rayyan-mohammed/HinglishRAG-Faith) · [demo](https://d1zhxd8az51i27.cloudfront.net) | Team of two. RAG for Hinglish government-scheme questions that checks every claim in an answer against retrieved evidence before it reaches the user |
 | [Parkinson's acoustic biomarkers](https://github.com/Rayyan-mohammed/Parkinson) | Voice-based detection with subject-level cross-validation, wav2vec2 features and SHAP explanations |
 | [OptiPrice](https://github.com/Rayyan-mohammed/OptiPrice) · [app](https://optiprice-dynamic-pricing-agent.streamlit.app/) | Constrained price optimisation with Monte Carlo A/B simulation and SHAP-explained recommendations |
 | [Urban Route Resilience](https://github.com/Rayyan-mohammed/Urban-Route-Resilience) | Team hackathon project: road extraction from satellite imagery plus graph-based network resilience analysis |
